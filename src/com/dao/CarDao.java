@@ -54,7 +54,7 @@ public class CarDao {
         );
         return util.insert(sql,new Object[]{car.getName(),car.getColor(),car.getPrice()});
     }
-    //JDBC初步封装后的增删改方法
+    //JDBC初步封装后的 增 删 改方法
     public int save3(Car car){
         String sql = "insert into jdbcCar(name,color,price) values(?,?,?)";
         JdbcFactory factory = new JdbcFactory();
